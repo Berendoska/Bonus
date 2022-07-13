@@ -2,12 +2,17 @@ public class Main {
     public static void main(String[] args) {
 
         int bill = 200;
-        int plus = 1000;
+        int plus = 5000;
 
-        if (bill + plus > 1000) {
-            System.out.println("Сумма бонусов: " + (bill + plus) / 100);
-            System.out.println("Итоговый счет: " + (bill + plus));
+        int bonus;
+        if (plus > 1000) {
+            bonus = (bill + plus) / 100;
+        } else {
+            bonus = 0;
         }
+        System.out.println("Сумма бонусов:" + (bonus));
+        System.out.println("Итоговый счет: " + (bill + plus));
     }
 }
+
 
