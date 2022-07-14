@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        int bill = 200;
+        int bill = 300;
         int plus = 5000;
 
         int bonus;
         if (plus > 1000) {
-            bonus = (bill + plus) / 100;
+            bonus = plus / 100;
         } else {
             bonus = 0;
         }
